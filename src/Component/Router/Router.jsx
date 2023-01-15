@@ -11,7 +11,7 @@ class Router extends Component {
                 <Header />
                 <Routes>
                     <Route exact path="/" element={<App />} />
-                    <Route exact path="/iniran" element={<DomesticFlightPage />} />
+                    <Route exact path="/flight" element={<DomesticFlightPage />} />
                 </Routes>
             </>
         )
