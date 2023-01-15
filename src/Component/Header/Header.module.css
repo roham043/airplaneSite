@@ -1,0 +1,110 @@
+.container{
+    
+    width: 100%;
+    height: 80px;
+    /* border-bottom: 1px solid #cccccc; */
+    box-shadow: 0px 2px 3px #dadada;
+    margin-bottom: 1px;
+}
+.logoContainer{
+    width: 10%;
+    height: 60px;
+    position: relative;
+    float: right;
+    margin: 10px 50px 10px 0;
+    display: flex;
+    flex-direction: row;
+    box-shadow: -3px -3px 6px #ffa500;
+    border-radius: 3px;
+    /* //1px 1px 3px// */
+}
+.logoContainerAlibabaIcon{
+    position: relative;
+    margin-top: 15px;
+}
+.logoContainerContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+.buttonContainer{
+    width: 30%;
+    height: 60px;
+    position: relative;
+    float: right;
+    margin: 10px 70px 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.buttonContainer button{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width:100px;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    border-left: 0.5px solid #d9d9d9;
+    padding: 5px 0;
+    cursor: pointer;
+    color: rgb(81, 80, 80);
+}
+.buttonContainer button:last-child{
+    border-left: none;
+}
+.linkContainer{
+    width: 33%;
+    height: 60px;
+    position: relative;
+    float: left;
+    margin: 10px 0 10px 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.linkContainer div{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 25%;
+    cursor: pointer;
+}
+
+.linkContainer p{
+    color: #737373;
+}
+@media  (max-width:700px) {
+    .buttonContainer{display: none;}
+    .linkContainer{width: 50%;}
+}
+.personIcon{
+    box-shadow: -1px -1px 3px #888888;  
+    color: #888888;
+    font-size: x-large;
+    /* 1px 1px 3px */
+}
+.personIcon:hover{
+    color: #ffa500;
+}
+.ReceiptIcon{
+    box-shadow: -1px -1px 3px #888888;
+    color: #888888;
+    font-size: x-large;
+}
+.HelpIcon{
+    box-shadow: -1px -1px 3px #888888;
+    color: #888888;
+    font-size: x-large;
+}

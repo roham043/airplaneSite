@@ -1,0 +1,84 @@
+.ticketMenu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 500px;
+}
+.ticketMenu button{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: rgb(73, 73, 73);
+    margin: 0px 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+    
+    
+}
+.Button:hover{
+    color:white;
+}
+.ticketMenu hr{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+    
+}
+.residenceMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.residenceMenu button{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: rgb(73, 73, 73);
+    margin: 0px 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.residenceMenu hr{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+}
+.moreMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.moreMenu button{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: rgb(73, 73, 73);
+    margin: 0px 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.moreMenu hr{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px; 
+}

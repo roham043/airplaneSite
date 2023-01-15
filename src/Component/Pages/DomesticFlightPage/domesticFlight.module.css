@@ -1,0 +1,36 @@
+.container{
+    position: relative;
+    top: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.sidefilter{
+    box-shadow: 1px 1px 3px 2px #dadada;
+    border-radius: 5px;
+    width: 25%;
+    height: 230px;
+}
+.ticketinfo{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.datebar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:auto;
+}
+.subInput{
+    position: absolute;
+    top: 500px;
+}

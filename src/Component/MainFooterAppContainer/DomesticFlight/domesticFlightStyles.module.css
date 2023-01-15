@@ -1,0 +1,87 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+}
+.selectComtainer{
+    width: 100%;
+    height: 50%;
+    /* background-color: burlywood; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.selectComtainer select{
+   margin-right: 50px;
+   border: none;
+   padding: 7px 10px;
+   border-radius: 20px;
+   box-shadow: 1px 1px 5px #bfbfbf;
+}
+
+.inputContainer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.inputContainer DatePicker{
+    background-color: red;
+    padding: 100px;
+}
+
+
+/* //============================================================================ */
+.footerAppContainer{
+    
+    width: 100%;
+    height: 180px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    background-color: white;
+    margin-top: 0px;
+}
+.selectFooterAppContainer{
+    
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.inputFooterAppContainer{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 25%;
+   
+}
+.inputFooterAppContainer input{
+    height: 95%;
+   
+    
+    
+}
+.inputFooterAppContainer input:nth-child(1){
+    border-right: none;
+}
+.inputFooterAppContainer button{
+    position: relative;
+    float: left;
+    padding: 15px 50px;
+    margin-right: 20px;
+    color: white;
+    background-color: #e3a107;
+    border: 0.5px solid #bfbfbf;
+    border-radius: 8px;
+}
