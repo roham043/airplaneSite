@@ -21,6 +21,7 @@
 .logoContainerAlibabaIcon{
     position: relative;
     margin-top: 15px;
+    
 }
 .logoContainerContent{
     display: flex;
@@ -29,6 +30,7 @@
     align-items: center;
     width: 80%;
     height: 100%;
+  
 }
 .buttonContainer{
     width: 30%;
@@ -106,10 +108,26 @@
     font-size: x-large;
 }
 
-@media  (max-width:1050px) {
+@media  (max-width:1019px) {
     .buttonContainer{
-        width: 20%;
+        display: none;
     }
    
-    .linkContainer{width: 20%;}
+    .linkContainer{
+        width: 60%;
+        font-size: 10px;
+    }
+
+    .logoContainerContent{
+        font-size: 10px;
+    }
+
+    .logoContainer{
+        width: 15%;
+    }
+}
+@media  (max-width:1445px) {
+    .logoContainer{
+        width: 15%;
+    }
 }

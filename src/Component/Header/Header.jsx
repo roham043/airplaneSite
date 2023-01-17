@@ -18,7 +18,7 @@ const Header = () => {
             <div className={styles.logoContainer}>
                 <Alibaba className={styles.logoContainerAlibabaIcon} />
                 <div className={styles.logoContainerContent}>
-                    <span style={{fontSize:'20px'}}>alibaba.ir</span>
+                    <span >alibaba.ir</span>
                     <span>خرید بلیط, هتل,تور</span>
                 </div>
 
