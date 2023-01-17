@@ -46,7 +46,7 @@ const DomesticFlight = () => {
       data.org === origin &&
       data.dest === destination);
     navigate(
-      '/iniran',
+      '/flight',
       { state: { data: filterDomesticFlightData, domesticFlightData: filterDomesticFlightData2 } }
     )
   }

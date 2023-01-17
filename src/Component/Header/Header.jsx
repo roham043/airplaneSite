@@ -24,7 +24,7 @@ const Header = () => {
 
             </div>
             <div className={styles.buttonContainer}>
-                <ButtonTicket/>
+                <ButtonTicket />
                 <ButtonResidence/>
                 <ButtomTour/>
                 <ButtonMore/>

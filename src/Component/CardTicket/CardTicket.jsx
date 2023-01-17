@@ -1,6 +1,14 @@
+import {useNavigate} from 'react-router-dom';
 import styles from './cardStyle.module.css';
 import arrivedestination from "../../assets/images/arrivedestination.png";
+
 const CardTicket = (props) => {
+    const navigate = useNavigate();
+    const clickHandler = (e) =>{
+        navigate(
+            '/flight/passengers',
+        )
+    }
     return (
 
         <div className={styles.ticket}>
@@ -41,7 +49,7 @@ const CardTicket = (props) => {
                 <div className={styles.costinfospan}>
                     <p>ریال </p>
                 </div>
-                <button >انتخاب پرواز</button>
+                <button onClick={clickHandler}>انتخاب پرواز</button>
                 <p>باقی مانده</p>
             </div>
         </div>

@@ -85,10 +85,7 @@
 .linkContainer p{
     color: #737373;
 }
-@media  (max-width:700px) {
-    .buttonContainer{display: none;}
-    .linkContainer{width: 50%;}
-}
+
 .personIcon{
     box-shadow: -1px -1px 3px #888888;  
     color: #888888;
@@ -107,4 +104,12 @@
     box-shadow: -1px -1px 3px #888888;
     color: #888888;
     font-size: x-large;
+}
+
+@media  (max-width:1050px) {
+    .buttonContainer{
+        width: 20%;
+    }
+   
+    .linkContainer{width: 20%;}
 }

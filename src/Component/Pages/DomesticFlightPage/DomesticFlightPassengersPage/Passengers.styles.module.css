@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stepper{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: auto;
+    
+    box-shadow: 0px 2px 3px #dadada;
+   
+}
+.ticketInfo{
+
+    width: 90%;
+    height: 250px;
+    background-color: bisque;
+    margin-top: 120px;
+}
+.passengersInfo
+{
+    width: 90%;
+    height: 400px;
+    background-color: beige;
+    margin-top: 13px;
+}
+.sendEmail{
+    width: 90%;
+    height: 100px;
+    background-color: rgb(15, 102, 102);
+    margin-top: 13px;
+}
+.buttonContainer{
+    width: 90%;
+    height: 100px;
+    background-color: rgb(61, 101, 101);
+    margin-top: 13px;
+}

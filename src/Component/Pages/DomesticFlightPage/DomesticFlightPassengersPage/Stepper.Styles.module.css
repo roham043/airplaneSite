@@ -1,0 +1,277 @@
+/* .container{
+    width: 100%;
+    height: 70px;
+    background-color: aqua;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+} */
+/* 
+--------------------- Icon and header styles -------------------
+*/
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+}
+.topContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+    
+}
+.topContainer div{
+    width: 26%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.topContainer div:last-child{
+    width: 4%;
+}
+.firstIcon{
+    position: relative;
+    top: 20px;
+    color: green;
+    padding: 0;
+    margin: 0;
+}
+.firstHr{
+    position: relative;
+    top: 11px;
+    background-color: green;
+    width: 100%;
+    height: 2px;
+    border: none;
+}
+.secondIcon{
+    position: relative;
+    top: 12px;
+    color: green;
+    padding: 0;
+    margin: 0;
+}
+.secondHr{
+    position: relative;
+    top: 11px;
+    background-color: rgb(193, 193, 193);
+    width: 100%;
+    height: 2px;
+    border: none;
+}
+.thirdIcon{
+    position: relative;
+    top: 7px;
+    color:rgb(193, 193, 193) ;
+    padding: 0;
+     margin: 0;
+   
+ }
+ .thirdHr{
+    position: relative;
+    top: 11px;
+    background-color: rgb(193, 193, 193);
+    width: 100%;
+    height: 2px;
+    border: none;
+ }
+ .fourthIcone{
+    position: relative;
+    top: 7px;
+    color:rgb(193, 193, 193) ;
+    padding: 0;
+    margin: 0;
+}
+.fourthHr{
+    position: relative;
+    top: 11px;
+    background-color: rgb(193, 193, 193);
+    width: 100%;
+    height: 2px;
+    border: none;
+}
+.fifthIcone{
+    position: relative;
+    top: 13px;
+    color:rgb(193, 193, 193) ;
+    padding: 0;
+    margin: 0; 
+}
+
+.topContainer hr{
+    width: 85%;
+}
+
+/*-----------------------------------------------*/
+.bottomContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    
+}
+.bottomContainer div{
+    
+    height: 100%;
+    
+}
+.firstH5{
+    position: relative;
+    right: 30%;
+}
+.secondH5{
+    position: relative;
+    left: 15%;
+    color: green; 
+    padding: 0;
+    margin: 0;
+}
+.thirdH5{
+    position: relative;
+    left: 55%;
+    color:rgb(193, 193, 193) ;
+    padding: 0;
+    margin: 0;
+}
+.fourthH5{
+    position: relative;
+    left: 98%;
+    color:rgb(193, 193, 193) ;
+    padding: 0;
+    margin: 0; 
+}
+.fifthH5{
+    position: relative;
+    left: 55%;
+    color:rgb(193, 193, 193) ;
+    padding: 0;
+    margin: 0; 
+}
+
+@media only screen and (max-width: 460px) {
+    .firstH5 {
+      font-size: 10px;
+    }
+    .secondH5{
+        font-size: 8px; 
+        position: relative;
+        right: 5%;
+    }
+    .thirdH5{
+        font-size: 10px; 
+        position: relative;
+        left: 33%;
+    }
+    .fourthH5{
+        font-size: 10px; 
+        position: relative;
+        left: 33%;
+    }
+    .fifthH5{
+        font-size: 10px; 
+        position: relative;
+        left: 30%;
+    }
+  }
+/* .container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    
+   
+}
+.firstIcon{
+    color: green;
+    padding: 0;
+    margin: 0;
+}
+.firstH2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 0;
+    margin: 0;
+    
+}
+.firstHr{
+    
+    background-color: green;
+    width: 100%;
+    height: 2px;
+    border: none;
+}
+.secondIcon{
+    color: green;
+    padding: 0;
+    margin: 0;
+}
+.BsFillPeopleFillH5{
+    color: green; 
+    padding: 0;
+    margin: 0;
+    
+}
+.secondHr{
+    background-color: rgb(193, 193, 193);
+    width: 100%;
+    height: 2px;
+    border: none;
+}
+
+.thirdIcon{
+   color:rgb(193, 193, 193) ;
+   padding: 0;
+    margin: 0;
+  
+}
+.thirdH5{
+    color:rgb(193, 193, 193) ;
+    padding: 0;
+    margin: 0;
+}
+.fourthIcone{
+    color:rgb(193, 193, 193) ;
+    padding: 0;
+    margin: 0;
+}
+.fourthH5{
+    color:rgb(193, 193, 193) ;
+    padding: 0;
+    margin: 0; 
+}
+.fifthIcone{
+    color:rgb(193, 193, 193) ;
+    padding: 0;
+    margin: 0; 
+}
+.container h5{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.container hr{
+    width: 10%;
+    padding: 0;
+    margin: 0;
+}  */
