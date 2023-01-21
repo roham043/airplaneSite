@@ -1,0 +1,20 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
+    border-radius: 5px;
+}
+
+.rightInfo{
+    width: 80%;
+    height: 100%;
+    
+    border-left: 1px solid #d5d5d5;
+}
+
+.dateInfo{
+    width: 100%;
+    height: 25%;
+    background-color: aquamarine;
+}

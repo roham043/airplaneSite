@@ -27,6 +27,7 @@
     right:10%;
     bottom: 42px;
     width: 80%;
+    font-family: iranyekan;
     
 }
 .Tabs{
@@ -39,5 +40,6 @@
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    font-family: iranyekan;
 }
 

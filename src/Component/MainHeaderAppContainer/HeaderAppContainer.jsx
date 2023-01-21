@@ -69,13 +69,13 @@ const HeaderAppContainer = () => {
             </div>
             <div className={styles.TabsContainer}>
                 <Tabs sx={{ color: 'red' }} value={value} onChange={handleChange} className={styles.Tabs} aria-label="icon label tabs example">
-                    <Tab sx={{ fontSize: '20px', py: 0, px: 6, m: 1 }} id='0' icon={<GiCommercialAirplane />} label="پرواز داخلی" onClick={handleClick} name="Domesticflight" ></Tab>
-                    <Tab sx={{ fontSize: '20px', py: 0, px: 6, m: 1 }} id='1' icon={<ImAirplane />} label="پرواز خارجی" onClick={handleClick} name="internationalflight" ></Tab>
-                    <Tab sx={{ fontSize: '20px', py: 0, px: 6, m: 1 }} id='2' icon={<IoTrain />} label="قطار" onClick={handleClick} name="train" />
-                    <Tab sx={{ fontSize: '20px', py: 0, px: 6, m: 1 }} id='3' icon={<FaBusAlt />} label="اتوبوس" onClick={handleClick} name="bus" />
-                    <Tab sx={{ fontSize: '20px', py: 0, px: 6, m: 1 }} id='4' icon={<MdLuggage />} label="تور" onClick={handleClick} name="tour" />
-                    <Tab sx={{ fontSize: '20px', py: 0, px: 6, m: 1 }} id='5' icon={<FaHotel />} label="هتل" onClick={handleClick} name="hotel" />
-                    <Tab sx={{ fontSize: '20px', py: 0, px: 6, m: 1 }} id='6' icon={<GiVillage />} label="ویلا و اقامتگاه" onClick={handleClick} name="villa" />
+                    <Tab sx={{ fontSize: '18px', py: 0, px: 6, m: 1 ,fontFamily:'iranyekan'}} id='0' icon={<GiCommercialAirplane />} label="پرواز داخلی" onClick={handleClick} name="Domesticflight" ></Tab>
+                    <Tab sx={{ fontSize: '18px', py: 0, px: 6, m: 1,fontFamily:'iranyekan' }} id='1' icon={<ImAirplane />} label="پرواز خارجی" onClick={handleClick} name="internationalflight" ></Tab>
+                    <Tab sx={{ fontSize: '18px', py: 0, px: 6, m: 1,fontFamily:'iranyekan' }} id='2' icon={<IoTrain />} label="قطار" onClick={handleClick} name="train" />
+                    <Tab sx={{ fontSize: '18px', py: 0, px: 6, m: 1,fontFamily:'iranyekan' }} id='3' icon={<FaBusAlt />} label="اتوبوس" onClick={handleClick} name="bus" />
+                    <Tab sx={{ fontSize: '18px', py: 0, px: 6, m: 1,fontFamily:'iranyekan' }} id='4' icon={<MdLuggage />} label="تور" onClick={handleClick} name="tour" />
+                    <Tab sx={{ fontSize: '18px', py: 0, px: 6, m: 1,fontFamily:'iranyekan' }} id='5' icon={<FaHotel />} label="هتل" onClick={handleClick} name="hotel" />
+                    <Tab sx={{ fontSize: '18px', py: 0, px: 6, m: 1,fontFamily:'iranyekan' }} id='6' icon={<GiVillage />} label="ویلا و اقامتگاه" onClick={handleClick} name="villa" />
                 </Tabs>
             </div>
         </div>
