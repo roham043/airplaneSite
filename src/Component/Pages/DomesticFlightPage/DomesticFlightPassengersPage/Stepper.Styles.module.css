@@ -129,6 +129,9 @@
     height: 100%;
     
 }
+.bottomContainer h5{
+    font-family: iranyekan;
+}
 .firstH5{
     position: relative;
     right: 30%;

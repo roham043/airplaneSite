@@ -3,8 +3,10 @@ import { useNavigate } from "react-router-dom";
 import styles from "./domesticFlightStyles.module.css";
 import domesticFlightData from "./domesticFlightData";
 import "@hassanmojab/react-modern-calendar-datepicker/lib/DatePicker.css";
-import DatePicker from "@hassanmojab/react-modern-calendar-datepicker";
+// import DatePicker from "@hassanmojab/react-modern-calendar-datepicker";
 import moment from "jalali-moment";
+import DtPicker from 'react-calendar-datetime-picker';
+import 'react-calendar-datetime-picker/dist/index.css';
 //---------- material ui import -----------------
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -24,8 +26,8 @@ const DomesticFlight = () => {
     day: Number(moment().locale('fa').format('DD'))
   };
 
-  const maxDate = new Date();
-  maxDate.setDate(maxDate.getDate() + 14)
+  // const maxDate = new Date();
+  // maxDate.setDate(maxDate.getDate() + 14)
   // console.log(moment(maxDate).locale('fa').format('YYYY/MM/DD hh:mm:ss'));
   // const maximumDate = {
   //     year: Number(moment(maxDate).locale('fa').format('YYYY')),
@@ -75,7 +77,7 @@ const DomesticFlight = () => {
       </div>
       <div className={styles.inputContainer}>
         <FormControl sx={{ m: 0, minWidth: 200 }}>
-          <InputLabel id="demo-simple-select-autowidth-label">مبدا</InputLabel>
+          <InputLabel sx={{fontFamily:'iranyekan'}} id="demo-simple-select-autowidth-label">مبدا</InputLabel>
           <Select
             labelId="demo-simple-select-autowidth-label"
             id="demo-simple-select-autowidth"
@@ -84,15 +86,15 @@ const DomesticFlight = () => {
             autoWidth
             label="Age"
           >
-            <MenuItem value={'تهران'} >تهران</MenuItem>
-            <MenuItem value={'مشهد'}>مشهد</MenuItem>
-            <MenuItem value={'تبریز'}>تبریز</MenuItem>
-            <MenuItem value={'شیراز'}>شیراز</MenuItem>
+            <MenuItem sx={{fontFamily:'iranyekan'}} value={'تهران'} >تهران</MenuItem>
+            <MenuItem sx={{fontFamily:'iranyekan'}} value={'مشهد'}>مشهد</MenuItem>
+            <MenuItem sx={{fontFamily:'iranyekan'}} value={'تبریز'}>تبریز</MenuItem>
+            <MenuItem sx={{fontFamily:'iranyekan'}} value={'شیراز'}>شیراز</MenuItem>
 
           </Select>
         </FormControl>
-        <FormControl sx={{ mr: 0, minWidth: 200 }}>
-          <InputLabel id="demo-simple-select-autowidth-label">مقصد</InputLabel>
+        <FormControl sx={{ mr: 0, minWidth: 200 ,fontFamily:'iranyekan'}}>
+          <InputLabel sx={{fontFamily:'iranyekan'}} id="demo-simple-select-autowidth-label">مقصد</InputLabel>
           <Select
             labelId="demo-simple-select-autowidth-label"
             id="demo-simple-select-autowidth"
@@ -102,37 +104,47 @@ const DomesticFlight = () => {
             label="Age"
           >
 
-            <MenuItem value={'تهران'}>تهران</MenuItem>
-            <MenuItem value={'مشهد'}>مشهد</MenuItem>
-            <MenuItem value={'تبریز'}>تبریز</MenuItem>
-            <MenuItem value={'شیراز'}>شیراز</MenuItem>
+            <MenuItem sx={{fontFamily:'iranyekan'}} value={'تهران'}>تهران</MenuItem>
+            <MenuItem sx={{fontFamily:'iranyekan'}} value={'مشهد'}>مشهد</MenuItem>
+            <MenuItem sx={{fontFamily:'iranyekan'}} value={'تبریز'}>تبریز</MenuItem>
+            <MenuItem sx={{fontFamily:'iranyekan'}} value={'شیراز'}>شیراز</MenuItem>
 
           </Select>
         </FormControl>
 
-        <DatePicker
-          calendarPopperPosition="bottom"
-          value={selectedDaygo}
-          onChange={setSelectedDaygo}
-          shouldHighlightWeekends
-          locale="fa"
-          inputPlaceholder='تاریخ رفت'
-          colorPrimary='orange'
-          minimumDate={minimumDate}
-        // maximumDate={maximumDate}
-        />
-        <DatePicker
-          calendarPopperPosition="bottom"
-          inputClassName={styles.inputdate}
-          value={selectedDayback}
-          onChange={setSelectedDayback}
-          shouldHighlightWeekends
-          locale="fa"
-          inputPlaceholder='تاریخ برگشت'
-          colorPrimary='orange'
-          minimumDate={selectedDaygo}
-        // maximumDate={maximumDate}
-        />
+        <div className={styles.dateContainer}>
+          <DtPicker
+            value={selectedDaygo}
+            onChange={setSelectedDaygo}
+            type='single'
+            local='fa'
+            showWeekend
+            placeholder='تاریخ رفت'
+            inputClass={styles.dateInput}
+            autoClose={false}
+            minDate={minimumDate}
+            headerClass={styles.dateHeader}
+            
+
+          />
+        </div>
+        <div className={styles.dateContainer}>
+          <DtPicker
+            value={selectedDayback}
+            onChange={setSelectedDayback}
+            type='single'
+            local='fa'
+            showWeekend
+            placeholder='تاریخ برگشت'
+            inputClass={styles.dateInput}
+            autoClose={false}
+            minDate={minimumDate}
+            // headerClass={styles.dateHeader}
+            // daysClass='--bs-warning'
+            // headerClass='bg-Info'
+          />
+        </div>
+
 
         <div className="ui input">
 
@@ -294,3 +306,27 @@ export default DomesticFlight;
 // );
 
 
+
+        /* <DatePicker
+          calendarPopperPosition="bottom"
+          value={selectedDaygo}
+          onChange={setSelectedDaygo}
+          shouldHighlightWeekends
+          locale="fa"
+          inputPlaceholder='تاریخ رفت'
+          colorPrimary='orange'
+          minimumDate={minimumDate}
+        // maximumDate={maximumDate}
+        />
+        <DatePicker
+          calendarPopperPosition="bottom"
+          inputClassName={styles.inputdate}
+          value={selectedDayback}
+          onChange={setSelectedDayback}
+          shouldHighlightWeekends
+          locale="fa"
+          inputPlaceholder='تاریخ برگشت'
+          colorPrimary='orange'
+          minimumDate={selectedDaygo}
+        // maximumDate={maximumDate}
+        /> */
