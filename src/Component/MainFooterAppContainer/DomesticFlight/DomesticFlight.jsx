@@ -64,19 +64,16 @@ const DomesticFlight = () => {
   return (
     <div className={styles.container}>
 
-      <div className={styles.selectComtainer}>
+      <div className={styles.selectContainer}>
         <select >
           <option>یک طرفه</option>
-          <option>دو طرفه</option>
+          <option> رفت و برگشت</option>
         </select>
-        <select>
-          <option>یک طرفه</option>
-          <option>دو طرفه</option>
-        </select>
+      
 
       </div>
       <div className={styles.inputContainer}>
-        <FormControl sx={{ m: 0, minWidth: 200 }}>
+        <FormControl className={styles.formControl} >
           <InputLabel sx={{fontFamily:'iranyekan'}} id="demo-simple-select-autowidth-label">مبدا</InputLabel>
           <Select
             labelId="demo-simple-select-autowidth-label"
@@ -93,7 +90,7 @@ const DomesticFlight = () => {
 
           </Select>
         </FormControl>
-        <FormControl sx={{ mr: 0, minWidth: 200 ,fontFamily:'iranyekan'}}>
+        <FormControl className={styles.formControl} >
           <InputLabel sx={{fontFamily:'iranyekan'}} id="demo-simple-select-autowidth-label">مقصد</InputLabel>
           <Select
             labelId="demo-simple-select-autowidth-label"
@@ -146,12 +143,12 @@ const DomesticFlight = () => {
         </div>
 
 
-        <div className="ui input">
+        
 
-          <input type="number" placeholder='تعداد مسافران' style={{ textAlign: "right" }} />
-        </div>
+          <input className={styles.inputNumber} type="number" placeholder='تعداد مسافران'  />
+        
         <button onClick={search}
-          className="ui yellow button">جستجوی بلیط</button>
+          className={styles.searchButton}>جستجوی بلیط</button>
 
       </div>
 
