@@ -14,7 +14,7 @@ export default function ButtomTour() {
 //1px 1px 3px gray -4px -4px 6px #888888
     return (
         <div>
-            <Box sx={{boxShadow:'-3px -3px 6px #888888',borderRadius:'3px'}}>
+            <Box sx={{boxShadow:'-1px -1px 2px #888888',borderRadius:'3px'}}>
                 <Button 
                     id="basic-button"
                     aria-controls={open ? 'basic-menu' : undefined}

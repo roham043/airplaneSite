@@ -1,4 +1,6 @@
 .container{
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -12,9 +14,65 @@
     
     border-left: 1px solid #d5d5d5;
 }
+.leftInfo{
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    height: 100%;
+    
+}
 
 .dateInfo{
     width: 100%;
     height: 25%;
     background-color: aquamarine;
+}
+.flightInfo{
+    width: 100%;
+    height: 40%;
+    background-color: blue;
+}
+.button{
+    margin: 15px 20px 30px 20px;
+    padding: 10px 20px;
+    border: 2px solid #0081ea;
+    border-radius: 10px;
+    background-color: white;
+    color: #008cff;
+}
+.detailes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: rew;
+}
+
+
+.title{
+    width: 40%;
+    height: 100%;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.amount{
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    direction: ltr;
+}
+.amount :last-child{
+    color: rgb(10, 214, 10);
+}
+.rial{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 5px;
+    font-size: 11px;
+    font-weight: lighter;
 }
